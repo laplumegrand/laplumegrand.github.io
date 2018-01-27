@@ -22,8 +22,8 @@ p {
 
 .profile{
   min-width: 20px;
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 100px;
+  max-height: 100px;
   min-height: 20px;
 }
 
