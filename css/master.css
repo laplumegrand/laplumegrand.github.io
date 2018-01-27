@@ -1,3 +1,20 @@
 body{
   background-color: #f3e0dc;
 }
+
+h1 {
+  color: #5c2018;
+  font-family: helvetica;
+  font-size: 28px;
+
+}
+
+p {
+  font-family: helvetica;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.media {
+  
+}
