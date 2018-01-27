@@ -1,15 +1,15 @@
 body{
-  background-color: #f3e0dc;
+  background-color: #5c2018;
 }
 
 h1 {
-  color: #5c2018;
+  color: #d4a59a;
   font-family: helvetica;
   font-size: 38px;
 }
 
 h2{
-  color: #bc4639;
+  color: #f3e0dc;
   font-family: helvetica;
   font-size: 24px;
 }
@@ -17,6 +17,7 @@ p {
   font-family: helvetica;
   font-size: 14px;
   margin: 0 auto;
+  color: #f3e0dc;
 }
 
 .media {
