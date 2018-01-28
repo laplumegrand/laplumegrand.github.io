@@ -7,9 +7,9 @@ h1 {
   font-family: helvetica;
   font-size: 38px;
   text-align: center;
-  border-left: 7px solid;
-  border-right: 7px solid;
-  background-color: #015249;
+  border-left: 7px solid #874c62;
+  border-right: 7px solid #874c62;
+  background-color: #c98474;
   padding: 20px;
   margin-top: 0;
 }
@@ -22,22 +22,26 @@ h2{
 }
 
 h6{
-  color: #77c9d4;
+  color: #874c62;
   text-align: center;
   font-family: helvetica;
 }
 
 p {
   font-family: helvetica;
-  font-size: 14px;
+  font-size: 17px;
   text-align: center;
   color: black;
-  max-width: 550px;
-  min-width: 200px;
+  max-width: 400px;
+  min-width: 150px;
 }
 
 a {
-  color: #57bc90;
+  color: #874c62;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .profile{
