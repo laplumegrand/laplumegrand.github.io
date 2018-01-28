@@ -23,6 +23,10 @@ p {
   color: lightgrey;
 }
 
+a {
+  color: white;
+}
+
 .profile{
   min-width: 20px;
   max-width: 100px;
