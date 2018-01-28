@@ -13,6 +13,7 @@ h1 {
   border-left: 7px solid #b82601;
   border-right: 7px solid #b82601;
   background-color: darkgrey;
+  padding: 20px;
 }
 
 h2{
@@ -20,6 +21,11 @@ h2{
   font-family: helvetica;
   font-size: 24px;
 }
+
+h6{
+  color: #b82601;
+}
+
 p {
   font-family: helvetica;
   font-size: 14px;
