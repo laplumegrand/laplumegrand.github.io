@@ -1,15 +1,15 @@
 body{
-  background-color: #5c2018;
+  background-color: #000000;
 }
 
 h1 {
-  color: #d4a59a;
+  color: #813772;
   font-family: helvetica;
   font-size: 38px;
 }
 
 h2{
-  color: #f3e0dc;
+  color: lightgrey;
   font-family: helvetica;
   font-size: 24px;
 }
@@ -17,7 +17,7 @@ p {
   font-family: helvetica;
   font-size: 14px;
   margin: 0 auto;
-  color: #f3e0dc;
+  color: lightgrey;
 }
 
 .profile{
