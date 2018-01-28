@@ -11,8 +11,8 @@ h1 {
   font-size: 38px;
   text-align: center;
   border-style: solid;
-  border: 5px;
-  border-color: #062f4f;
+  border-width: 5px;
+  border-color: grey;
   padding: 14px, 22px;
 }
 
