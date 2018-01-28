@@ -1,14 +1,18 @@
 body{
   background-color: #000000;
   background: -webkit-linear-gradient(#000000, #062f4f);
- background:    -moz-linear-gradient(#000000, #062f4f);
- background:         linear-gradient(#000000, #062f4f);
+  background:    -moz-linear-gradient(#000000, #062f4f);
+  background:         linear-gradient(#000000, #062f4f);
 }
 
 h1 {
   color: #813772;
   font-family: helvetica;
   font-size: 38px;
+  text-align: center;
+  border: 5px;
+  border-color: #062f4f;
+  padding: 14px,22px;
 }
 
 h2{
@@ -34,6 +38,6 @@ a {
   min-height: 20px;
 }
 
-.media {
+.bottom {
 
 }
