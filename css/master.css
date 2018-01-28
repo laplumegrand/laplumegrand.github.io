@@ -58,3 +58,15 @@ a {
   max-height: 100px;
   min-height: 20px;
 }
+
+.assignment{
+  background-color: white;
+}
+
+.bottom {
+  background-color: #a7d2cb;
+}
+
+/*background: -webkit-linear-gradient(#000000, #062f4f);
+background:    -moz-linear-gradient(#000000, #062f4f);
+background:         linear-gradient(#000000, #062f4f);*/
