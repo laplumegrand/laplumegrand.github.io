@@ -1,40 +1,40 @@
 body{
-  background-color: #000000;
-  background: -webkit-linear-gradient(#000000, #062f4f);
-  background:    -moz-linear-gradient(#000000, #062f4f);
-  background:         linear-gradient(#000000, #062f4f);
+  background-color: #a5a5af;
 }
 
 h1 {
-  color: #813772;
+  color: white;
   font-family: helvetica;
   font-size: 38px;
   text-align: center;
-  border-left: 7px solid #b82601;
-  border-right: 7px solid #b82601;
-  background-color: darkgrey;
+  border-left: 7px solid;
+  border-right: 7px solid;
+  background-color: #015249;
   padding: 20px;
 }
 
 h2{
-  color: lightgrey;
+  color: #015249;
   font-family: helvetica;
   font-size: 24px;
+  padding-left: 50px;
 }
 
 h6{
-  color: #b82601;
+  color: #77c9d4;
+  text-align: center;
+  font-family: helvetica;
 }
 
 p {
   font-family: helvetica;
   font-size: 14px;
   margin: 0 auto;
-  color: lightgrey;
+  color: black;
 }
 
 a {
-  color: white;
+  color: #57bc90;
 }
 
 .profile{
