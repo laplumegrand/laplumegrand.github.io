@@ -1,6 +1,8 @@
 body{
   background-color: #000000;
-  background: linear-gradient (-20, #000000, #062f4f);
+  background: -webkit-linear-gradient(#000000, #062f4f);
+ background:    -moz-linear-gradient(#000000, #062f4f);
+ background:         linear-gradient(#000000, #062f4f);
 }
 
 h1 {
