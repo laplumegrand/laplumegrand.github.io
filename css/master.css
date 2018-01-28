@@ -10,9 +10,10 @@ h1 {
   font-family: helvetica;
   font-size: 38px;
   text-align: center;
+  border-style: solid;
   border: 5px;
   border-color: #062f4f;
-  padding: 14px,22px;
+  padding: 14px, 22px;
 }
 
 h2{
