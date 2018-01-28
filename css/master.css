@@ -21,6 +21,14 @@ h2{
   padding-left: 50px;
 }
 
+.bottom {
+  font-family: helvetica;
+  color: white;
+  background-color: #874c62;
+  border-left: 7px solid #c98474;
+  border-right: 7px solid #c98474;
+}
+
 h6{
   color: #874c62;
   text-align: center;
