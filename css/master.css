@@ -1,5 +1,5 @@
 body{
-  background-color: #a5a5af;
+  background-color: #f2d388;
 }
 
 h1 {
@@ -11,6 +11,7 @@ h1 {
   border-right: 7px solid;
   background-color: #015249;
   padding: 20px;
+  margin-top: 0;
 }
 
 h2{
@@ -29,8 +30,10 @@ h6{
 p {
   font-family: helvetica;
   font-size: 14px;
-  margin: 0 auto;
+  text-align: center;
   color: black;
+  max-width: 550px;
+  min-width: 200px;
 }
 
 a {
@@ -42,8 +45,4 @@ a {
   max-width: 100px;
   max-height: 100px;
   min-height: 20px;
-}
-
-.bottom {
-
 }
