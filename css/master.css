@@ -2,7 +2,7 @@ body{
   background-color: #f2d388;
   margin-top: 0;
   align-items: center;
-  padding: 30px;
+  padding: 0 30px 30px 30px;
 }
 
 h1 {
@@ -51,19 +51,10 @@ a {
   color: #874c62;
 }
 
-.uppercase{
-  text-transform: uppercase;
-}
-
-.profile{
-  min-width: 20px;
-  max-width: 100px;
-  max-height: 100px;
-  min-height: 20px;
-}
-
 .assignment{
   background-color: white;
+  padding: 25px;
+  align-items: center;
 }
 
 .bottom {
