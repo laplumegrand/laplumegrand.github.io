@@ -1,7 +1,6 @@
 body{
   background-color: #f2d388;
   margin-top: 0;
-  align-items: center;
   padding: 0 30px 30px 30px;
 }
 
@@ -54,11 +53,16 @@ a {
 .assignment{
   background-color: white;
   padding: 25px;
-  align-items: center;
+  border-top: 7px solid #874c62;
+  border-bottom: 7px solid #874c62;
 }
 
 .bottom {
   background-color: #a7d2cb;
+}
+
+#important {
+  text-transform: uppercase;
 }
 
 /*background: -webkit-linear-gradient(#000000, #062f4f);
