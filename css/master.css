@@ -37,6 +37,10 @@ h6{
   font-family: helvetica;
 }
 
+div{
+  align-items: center;
+}
+
 p {
   font-family: helvetica;
   font-size: 17px;
