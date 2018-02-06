@@ -1,5 +1,6 @@
 body{
   background-color: #f2d388;
+  margin-top: 0;
 }
 
 h1 {
@@ -12,11 +13,10 @@ h1 {
   background-color: #c98474;
   padding: 20px;
   margin-top: 0;
-  position: sticky;
 }
 
 h2{
-  color: #015249;
+  color: #874c62;
   font-family: helvetica;
   font-size: 24px;
   padding-left: 50px;
