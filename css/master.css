@@ -1,6 +1,8 @@
 body{
   background-color: #f2d388;
   margin-top: 0;
+  align-items: center;
+  padding: 30px;
 }
 
 h1 {
