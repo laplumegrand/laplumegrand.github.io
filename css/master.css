@@ -69,6 +69,23 @@ a {
   text-transform: uppercase;
 }
 
+.article_image{
+  grid-area: image;
+  justify-self: center;
+}
+
+.article_text{
+  grid-area: meta_text;
+  align-self: start;
+}
+
+article {
+  display: grid;
+  grid: "image meta_text" auto / 200px auto;
+  margin-bottom: 20px;
+}
+
+
 /*background: -webkit-linear-gradient(#000000, #062f4f);
 background:    -moz-linear-gradient(#000000, #062f4f);
 background:         linear-gradient(#000000, #062f4f);*/
