@@ -13,7 +13,7 @@ let projectArray = [
 ]
 
 
-let projectObject {
+let projectObject = {
   id: projectId
   title: projectTitle,
   desc: projectDesc,
