@@ -18,7 +18,7 @@ let projectObject = {
   title: projectTitle,
   desc: projectDesc,
   img: projectIMG,
-  url: projectURL,
+  url: projectURL
 }
 
 console.log(projectObject.URL);
