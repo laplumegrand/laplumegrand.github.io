@@ -14,7 +14,7 @@ let projectArray = [
 
 
 let projectObject = {
-  id: projectId
+  id: projectId,
   title: projectTitle,
   desc: projectDesc,
   img: projectIMG,
