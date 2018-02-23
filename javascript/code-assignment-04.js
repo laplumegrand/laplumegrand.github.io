@@ -22,3 +22,4 @@ let projectObject = {
 }
 
 console.log(projectObject.URL);
+console.log(projectArray[3]);
