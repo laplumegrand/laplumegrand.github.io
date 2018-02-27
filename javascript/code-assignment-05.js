@@ -22,7 +22,7 @@ let assignments = [
 ]
 
 for (i=0; i< assignments.length; i++) {
-  console.log(array[0]);
+  console.log(assignments[i]);
 }
 
 for (i=0; i< assignments.length; i++){
@@ -30,7 +30,7 @@ for (i=0; i< assignments.length; i++){
     console.log("It is "+ assignments[i].updated +" that this assignment's post has been updated.");
   }
   else {
-    console.log("This assignmnet's post has not been fully updated.");
+    console.log("This assignment's post has not been fully updated.");
   }
 }
 
