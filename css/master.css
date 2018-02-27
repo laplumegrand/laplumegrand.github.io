@@ -53,13 +53,6 @@ a {
   color: #874c62;
 }
 
-.assignment{
-  background-color: linen;
-  padding: 25px;
-  border-top: 7px solid #874c62;
-  border-bottom: 7px solid #874c62;
-}
-
 .bottom {
   background-color: #a7d2cb;
 }
@@ -82,6 +75,10 @@ article {
   display: grid;
   grid: "image meta_text" auto / 300px auto;
   margin-bottom: 20px;
+  background-color: linen;
+  padding: 25px;
+  border-top: 7px solid #874c62;
+  border-bottom: 7px solid #874c62;
 }
 
 .side{
