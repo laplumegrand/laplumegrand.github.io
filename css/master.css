@@ -79,6 +79,7 @@ article {
   padding: 25px;
   border-top: 7px solid #874c62;
   border-bottom: 7px solid #874c62;
+  grid-column-gap: 30px;
 }
 
 .side{
