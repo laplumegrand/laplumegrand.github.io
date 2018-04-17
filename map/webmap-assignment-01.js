@@ -46,6 +46,7 @@ webmap.addLayer(polyline);
 
 polygon.bindPopup('Downtown Baton Rouge');
 marker.bindPopup('LSU Lakes/BREC Park');
+polyline.bindPopup('LSU Lakes Running Route');
 
 function logCurrentCoordinates (event) {
   console.log('You clicked the map at ' + event.latlng)
