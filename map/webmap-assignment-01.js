@@ -33,9 +33,9 @@ var polylinePoints = [
          ];
 
 var polylineOptions = {
-                       color: 'blue',
-                       weight: 6,
-                       opacity: 0.9
+                       color: 'purple',
+                       weight: 5,
+                       opacity: 0.75
                      };
 
 var polyline = new L.Polyline(polylinePoints, polylineOptions);
