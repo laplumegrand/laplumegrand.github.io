@@ -1,4 +1,3 @@
-
 let myPawprint = L.icon({
   iconUrl: '../img/pawprintIcon.png',
   iconSize: [30, 30], // size of the icon
