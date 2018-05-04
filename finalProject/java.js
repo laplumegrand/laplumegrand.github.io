@@ -38,15 +38,31 @@ L.geoJSON(myLayerData, myLayerOptions).addTo(map);
 
 // an object containing a list of basemaps (makes more sense to use with multiple basemaps)
 let basemaps = {
-  'My Basemap': streets // replace streets with your basemap object, not shown in this snippet
+  "Basemap": layer,
+  "Topographic Map": topoLayer,
+  "Dark Map": darkLayer
 }
 
-// an object containing a list of operation layers
-let layers = {
-  'My Layer': myLayer
-}
+L.control.layers(basemaps).addTo(map);
 
-L.control.layers(basemaps, layers).addTo(map);
+let style = function (feature){
+  let inOrOut = feature.properties.where
+
+  let myIcon = L.icon({
+    iconUrl: 'castle.png',
+    iconSize: [30, 30],
+    iconAnchor: [15, 15 ],
+    popupAnchor: [0,-13]
+  })
+
+  if (inOrOut = "outside"){
+    iconUrl ="leaf.png"
+  }
+
+  if (inOrOut = "underground"){
+    iconUrl = "skull.png"
+  }
+}
 _______________________________________________________________________________________________________
 
 let jardinLux = L.polygon([
@@ -58,14 +74,14 @@ let jardinLux = L.polygon([
   [48.844974, 2.332407],
   [48.848625, 2.332611],
   [48.849200, 2.335601]
-]).addTo(webmap);
+], style).addTo(webmap);
 
 let jardinTul = L.polygon([
   [48.866397, 2.323481],
   [48.863839, 2.321579],
   [48.861013, 2.329918],
   [48.863772, 2.331902]
-]).addTo(webmap);
+], style).addTo(webmap);
 
 let museeLouvre = L.polygon([
   [48.863660, 2.332188],
@@ -73,7 +89,7 @@ let museeLouvre = L.polygon([
   [48.859111, 2.339728],
   [48.859411, 2.336503],
   [48.860963, 2.330194]
-]).addTo(webmap);
+], style).addTo(webmap);
 
 let champs = L.polyline([
   [48.865677, 2.320667],
@@ -89,13 +105,19 @@ let montmartre = L.polygon([
   [48.889859, 2.342986],
   [48.889481, 2.335004],
   [48.886579, 2.332556]
-]).addTo(webmap);
+], style).addTo(webmap);
 
 var polylineOptions = {
-                       color: 'purple',
-                       weight: 5,
-                       opacity: 0.75
-                     };
+   color: 'purple',
+   weight: 5,
+  opacity: 0.75
+ };
+
+let style = {
+  color: "cyan",
+  weight: 5,
+  opacity: 0.3};
+
 
 jardinLux.bindPopup('Le Jardin du Luxembourg');
 jardinTul.bindPopup('Le Jardin des Tuileries');
