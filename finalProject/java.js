@@ -1,20 +1,33 @@
 var webmap = L.map('mapid').setView([48.855591, 2.343107], 10);
 
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+let layer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox.streets',
     accessToken: 'pk.eyJ1IjoibGFwbHVtZSIsImEiOiJjamczdXpqankwNXFlMnd0NW1yOGhodzhiIn0.s0Lgw6ScO583Nrj4Smmr6w'
 }).addTo(webmap);
 
-let myLayer = L.layerGroup().addTo(webmap)
+let topoLayer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+	maxZoom: 17,
+	attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+});).addTo(webmap);
+
+let darkLayer = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', {
+	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+	subdomains: 'abcd',
+	maxZoom: 19
+});).addTo(webmap);
+
+let JsonMarkers = {
+  {"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"museedOrsay","lat":48.859854,"lon":2.326155, "where":"inside"},"geometry":null},{"type":"Feature","properties":{"name":"laTour","lat":48.858159,"lon":2.294355,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"pontDesArts","lat":48.858308,"lon":2.337503,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"pontNeuf","lat":48.857997,"lon":2.341966,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"sacreCoeur","lat":48.886484,"lon":2.343106,"where":"inside"},"geometry":null},{"type":"Feature","properties":{"name":"notreDame","lat":48.853239,"lon":2.349224,"where":"inside"},"geometry":null},{"type":"Feature","properties":{"name":"larc","lat":48.873782,"lon":2.295006,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"catacombes","lat":48.833776,"lon":2.332337,"where":"underground"},"geometry":null},{"type":"Feature","properties":{"name":"fontaine","lat":48.853156,"lon":2.332337,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"leMur","lat":48.884767,"lon":2.338532,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"palaisLux","lat":48.848062,"lon":2.337272,"where":"inside"},"geometry":null},{"type":"Feature","properties":{"name":"pomp","lat":48.860525,"lon":2.352281,"where":"inside"},"geometry":null}]}
+}
 
 L.geoJSON(JsonMarkers).addTo(webmap);
 
 function addData (features, layers) {
   myLayer.addLayer(layers)
   // some other code can go here, like adding a popup with layer.bindPopup("Hello")
-}
+};
 
 // create an options object that specifies which function to call on each feature
 let myLayerOptions = {
@@ -22,7 +35,7 @@ let myLayerOptions = {
 }
 
 // create the GeoJSON layer from myLayerData
-L.geoJSON(myLayerData, myLayerOptions).addTo(map)
+L.geoJSON(myLayerData, myLayerOptions).addTo(map);
 
 // an object containing a list of basemaps (makes more sense to use with multiple basemaps)
 let basemaps = {
@@ -34,7 +47,7 @@ let layers = {
   'My Layer': myLayer
 }
 
-L.control.layers(basemaps, layers).addTo(map)
+L.control.layers(basemaps, layers).addTo(map);
 _______________________________________________________________________________________________________
 
 let jardinLux = L.polygon([
@@ -88,11 +101,11 @@ var polylineOptions = {
 jardinLux.bindPopup('Le Jardin du Luxembourg');
 jardinTul.bindPopup('Le Jardin des Tuileries');
 museeLouvre.bindPopup('Le Musée du Louvre');
-champs.bindPopup("Les Champs-Elysées")
-montmartre.bindPopup("l'Arrondissement de Montmartre")
+champs.bindPopup("Les Champs-Elysées");
+montmartre.bindPopup("l'Arrondissement de Montmartre");
 
 function logCurrentCoordinates (event) {
   console.log('You clicked the map at ' + event.latlng)
-}
+};
 
 webmap.on('click', logCurrentCoordinates);
