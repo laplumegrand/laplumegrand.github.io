@@ -4,6 +4,6 @@ function imageName(number) {
   return desc;
 }
 
-let imgNumber = 2;
+let imgNumber = 3;
 let desc = imageName(imgNumber);
 console.log(desc);
