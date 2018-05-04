@@ -18,9 +18,8 @@ let darkLayer = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/
 	maxZoom: 19
 }).addTo(webmap);
 
-let JsonMarkers = {
-  {"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"museedOrsay","lat":48.859854,"lon":2.326155, "where":"inside"},"geometry":null},{"type":"Feature","properties":{"name":"laTour","lat":48.858159,"lon":2.294355,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"pontDesArts","lat":48.858308,"lon":2.337503,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"pontNeuf","lat":48.857997,"lon":2.341966,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"sacreCoeur","lat":48.886484,"lon":2.343106,"where":"inside"},"geometry":null},{"type":"Feature","properties":{"name":"notreDame","lat":48.853239,"lon":2.349224,"where":"inside"},"geometry":null},{"type":"Feature","properties":{"name":"larc","lat":48.873782,"lon":2.295006,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"catacombes","lat":48.833776,"lon":2.332337,"where":"underground"},"geometry":null},{"type":"Feature","properties":{"name":"fontaine","lat":48.853156,"lon":2.332337,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"leMur","lat":48.884767,"lon":2.338532,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"palaisLux","lat":48.848062,"lon":2.337272,"where":"inside"},"geometry":null},{"type":"Feature","properties":{"name":"pomp","lat":48.860525,"lon":2.352281,"where":"inside"},"geometry":null}]}
-}
+let JsonMarkers = {"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"museedOrsay","lat":48.859854,"lon":2.326155,"where":"inside"},"geometry":null},{"type":"Feature","properties":{"name":"laTour","lat":48.858159,"lon":2.294355,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"pontDesArts","lat":48.858308,"lon":2.337503,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"pontNeuf","lat":48.857997,"lon":2.341966,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"sacreCoeur","lat":48.886484,"lon":2.343106,"where":"inside"},"geometry":null},{"type":"Feature","properties":{"name":"notreDame","lat":48.853239,"lon":2.349224,"where":"inside"},"geometry":null},{"type":"Feature","properties":{"name":"larc","lat":48.873782,"lon":2.295006,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"catacombes","lat":48.833776,"lon":2.332337,"where":"underground"},"geometry":null},{"type":"Feature","properties":{"name":"fontaine","lat":48.853156,"lon":2.332337,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"leMur","lat":48.884767,"lon":2.338532,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"palaisLux","lat":48.848062,"lon":2.337272,"where":"inside"},"geometry":null},{"type":"Feature","properties":{"name":"pomp","lat":48.860525,"lon":2.352281,"where":"inside"},"geometry":null}]}
+
 
 L.geoJSON(JsonMarkers).addTo(webmap);
 
@@ -31,7 +30,7 @@ function addData (features, layers) {
 
 // create an options object that specifies which function to call on each feature
 let myLayerOptions = {
-  onEachFeature: addMyData
+  onEachFeature: addData
 }
 
 // create the GeoJSON layer from myLayerData
