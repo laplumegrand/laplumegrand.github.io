@@ -10,13 +10,13 @@ let layer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?ac
 let topoLayer = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 	maxZoom: 17,
 	attribution: 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
-});).addTo(webmap);
+}).addTo(webmap);
 
 let darkLayer = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', {
 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
 	subdomains: 'abcd',
 	maxZoom: 19
-});).addTo(webmap);
+}).addTo(webmap);
 
 let JsonMarkers = {
   {"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"museedOrsay","lat":48.859854,"lon":2.326155, "where":"inside"},"geometry":null},{"type":"Feature","properties":{"name":"laTour","lat":48.858159,"lon":2.294355,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"pontDesArts","lat":48.858308,"lon":2.337503,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"pontNeuf","lat":48.857997,"lon":2.341966,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"sacreCoeur","lat":48.886484,"lon":2.343106,"where":"inside"},"geometry":null},{"type":"Feature","properties":{"name":"notreDame","lat":48.853239,"lon":2.349224,"where":"inside"},"geometry":null},{"type":"Feature","properties":{"name":"larc","lat":48.873782,"lon":2.295006,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"catacombes","lat":48.833776,"lon":2.332337,"where":"underground"},"geometry":null},{"type":"Feature","properties":{"name":"fontaine","lat":48.853156,"lon":2.332337,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"leMur","lat":48.884767,"lon":2.338532,"where":"outside"},"geometry":null},{"type":"Feature","properties":{"name":"palaisLux","lat":48.848062,"lon":2.337272,"where":"inside"},"geometry":null},{"type":"Feature","properties":{"name":"pomp","lat":48.860525,"lon":2.352281,"where":"inside"},"geometry":null}]}
