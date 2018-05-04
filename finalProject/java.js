@@ -25,25 +25,17 @@ L.geoJSON(JsonMarkers).addTo(webmap);
 
 function addData (features, layers) {
   myLayer.addLayer(layers)
-  // some other code can go here, like adding a popup with layer.bindPopup("Hello")
 };
 
-// create an options object that specifies which function to call on each feature
-let myLayerOptions = {
-  onEachFeature: addData
-}
-
-// create the GeoJSON layer from myLayerData
-L.geoJSON(myLayerData, myLayerOptions).addTo(map);
-
-// an object containing a list of basemaps (makes more sense to use with multiple basemaps)
 let basemaps = {
   "Basemap": layer,
   "Topographic Map": topoLayer,
   "Dark Map": darkLayer
 }
 
-L.control.layers(basemaps).addTo(map);
+L.geoJSON(basemaps).addTo(webmap);
+
+L.control.layers(basemaps).addTo(webmap);
 
 let style = function (feature){
   let inOrOut = feature.properties.where
@@ -113,7 +105,7 @@ var polylineOptions = {
   opacity: 0.75
  };
 
-let style = {
+let polygonStyle = {
   color: "cyan",
   weight: 5,
   opacity: 0.3};
